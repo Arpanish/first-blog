@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        {% block title %}
+        Django  blog
+        {% endblock %}
+    </title>
+    
+
+    {%  block style %}
+    <!--  -->
+    {% endblock style %}
+</head>
+<body>
+     <!-- here will be  header -->
+    {% include "header.html" %}
+    <!-- start of block content -->
+    {% block content %}
+    <!-- end of block content -->
+
+    {% endblock content %}
+
+   
+
+    <!--here will be footer  -->
+    {% include "footer.html" %}   
+
+    <!-- block for script/js -->
+    {% block scripts %}
+    
+    {% endblock scripts%} 
+    <!--end of js/script  -->
+    
+</body>
+</html>
