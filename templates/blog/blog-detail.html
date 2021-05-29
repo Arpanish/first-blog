@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main>
+    <br>
+    <div class= "container blog-content">
+        <div class= "row">
+            <img src="{{posts.image.url}}" alt=""  width="auto">
+        </div>
+        <div class="row">
+            <h3>{{posts.title}}-{{posts.published_date}}</h3>
+            <p>{{posts.text}}</p>
+        </div>
+
+    </div>
+</main>
+{% endblock content %}

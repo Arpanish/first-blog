@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+.cal-head{
+    color:black;
+    font-size: 50px;
+    
+}
+.some{
+    color:black;
+    font-size: 25px;
+} 
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.338);
+    margin-bottom: -20px;
+    
+}
+.row
+{
+    width:100%;
+    text-align: center;
+   
+   
+}
+.blog-content{
+    margin-top: 20px;
+}

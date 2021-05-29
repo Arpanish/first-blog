@@ -14,6 +14,10 @@ def postlist(request):
      posts = Post.objects.all()
      print(posts)
      return render(request, 'blog/blog-list.html', {'posts':posts})  
+ 
+def post_detail(request, id):
+    posts = Post.objects.get(id=id)
 
+    return render(request, 'blog/blog-detail.html', {'posts':posts})
 
 # Create your views here.
