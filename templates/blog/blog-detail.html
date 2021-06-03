@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
+{% block title %}
+Blog Detail
+{% endblock %}
+
 {% block content %}
 
 <main>
@@ -9,8 +13,12 @@
             <img src="{{posts.image.url}}" alt=""  width="auto">
         </div>
         <div class="row">
-            <h3>{{posts.title}}-{{posts.published_date}}</h3>
-            <p>{{posts.text}}</p>
+            <h3>{{posts.title}}</h3>
+            <p>{{posts.published_date}}</p>
+            <div>
+                {{post.text|safe}}
+            </div>
+           
         </div>
 
     </div>
